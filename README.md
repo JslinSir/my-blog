@@ -13,4 +13,4 @@
 * [中骏小程序复盘一些问题](./mp/mp-scre-review.md) 
 * [企微分享相关](./mp/qyshare.md) 
 * [企微客户画像客户群画像](./mp/qychart.md) 
-
+* [小程序适配iphone-x](https://github.com/JslinSir/my-blog/issues/1) 
