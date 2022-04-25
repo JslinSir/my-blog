@@ -7,6 +7,9 @@
 * [获取企业微信版本号](./h5/qrH5getVersion.md)
 * [H5 适配 IPhone X 系列](https://github.com/JslinSir/my-blog/issues/1#issuecomment-1108091103)
 
+## React
+* [react 遇到短路操作的渲染问题](https://github.com/JslinSir/my-blog/issues/4)
+
 ## 小程序
 * [小程序路由传参思考🤔](./mp/mp-route.md)
 * [小程序权限点设计](./mp/mp-qy-power.md)
