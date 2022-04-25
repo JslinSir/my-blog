@@ -5,6 +5,7 @@
 ## H5
 * [企微H5授权流程](./h5/qrH5Auth.md)
 * [获取企业微信版本号](./h5/qrH5getVersion.md)
+* [H5 适配 IPhone X 系列](https://github.com/JslinSir/my-blog/issues/1#issuecomment-1108091103)
 
 ## 小程序
 * [小程序路由传参思考🤔](./mp/mp-route.md)
