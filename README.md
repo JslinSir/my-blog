@@ -1,4 +1,4 @@
-# 点点滴滴
+# JsLin Blog
 
 
 
@@ -11,7 +11,7 @@
 ## React
 * [react 遇到短路操作的渲染问题](https://github.com/JslinSir/my-blog/issues/4)
 
-## 小程序☁
+## 小程序
 * [小程序路由传参思考🤔](./mp/mp-route.md)
 * [小程序权限点设计](./mp/mp-qy-power.md)
 * [小程序商圈积分](./mp/point-merchart.md) 
