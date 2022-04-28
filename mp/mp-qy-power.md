@@ -24,7 +24,7 @@ emm，看起来很完美，但是，如果是推送或者消息点过来的页�
   
 ### 代码如下：
 
- ```
+ ```js
 
 /**
  * 
@@ -100,7 +100,7 @@ module.exports = auth
 
 ### js中 使用
 
-```
+```js
  Page(auth({
 
 
@@ -111,7 +111,7 @@ module.exports = auth
 
 ### wxml中使用
 
-```
+```xml
 <block wx:if="{{AuthLoaded}}">
 
    <Auth key="xxx">
