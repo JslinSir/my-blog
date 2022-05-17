@@ -26,3 +26,6 @@
 
 ## 思考🤔
 * [谈谈前端开发过程中bug率较高问题 ](https://github.com/JslinSir/my-blog/issues/5)
+
+## Others
+* [dom-to-image的使用](https://github.com/JslinSir/my-blog/issues/8)
