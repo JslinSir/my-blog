@@ -22,7 +22,8 @@
 ## React
 * [react 遇到短路操作的渲染问题](https://github.com/JslinSir/my-blog/issues/4)
 
-
+## Css
+* [Css变量的使用](https://github.com/JslinSir/my-blog/issues/10)
 
 ## 思考🤔
 * [谈谈前端开发过程中bug率较高问题 ](https://github.com/JslinSir/my-blog/issues/5)
