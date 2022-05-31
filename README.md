@@ -32,6 +32,7 @@
 
 ## Others
 * [dom-to-image的使用](https://github.com/JslinSir/my-blog/issues/8)
+* [一个简单的react 路由实现 ](https://github.com/ashok-khanna/react-snippets/blob/main/Router.js)
 
 ## 生活 🏃🏻‍♀️
 * [平淡的迎来30岁](https://github.com/JslinSir/my-blog/issues/9)
