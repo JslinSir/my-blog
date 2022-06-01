@@ -1,8 +1,10 @@
 # JsLin Blog
 
 ## 学习
-[Web Components 学习](https://github.com/JslinSir/my-blog/issues/11)
+* [Web Components 学习](https://github.com/JslinSir/my-blog/issues/11)
 
+## JavaScript 
+* [window.addEventListener & window.dispatchEvent](https://github.com/JslinSir/my-blog/issues/12)
 
 ## 小程序
 * [解锁在小程序中使用Svg新姿势🔥](https://github.com/JslinSir/my-blog/issues/7)
