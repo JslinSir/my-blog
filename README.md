@@ -9,6 +9,7 @@
 
 ## 小程序
 * [解锁在小程序中使用Svg新姿势🔥](https://github.com/JslinSir/my-blog/issues/7)
+* [在小程序中隐藏滚动条](https://github.com/JslinSir/my-blog/issues/14)
 * [小程序适配iphone-x](https://github.com/JslinSir/my-blog/issues/1) 
 * [小程序路由传参思考🤔](./mp/mp-route.md)
 * [小程序权限点设计](./mp/mp-qy-power.md)
