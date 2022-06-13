@@ -6,6 +6,7 @@
 ## JavaScript 
 * [window.addEventListener & window.dispatchEvent](https://github.com/JslinSir/my-blog/issues/12)
 * [JavaScript数据类型](https://github.com/JslinSir/my-blog/issues/13)
+* [base64 图片压缩](https://github.com/JslinSir/my-blog/issues/15)
 
 ## 小程序
 * [解锁在小程序中使用Svg新姿势🔥](https://github.com/JslinSir/my-blog/issues/7)
