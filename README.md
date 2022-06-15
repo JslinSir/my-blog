@@ -36,6 +36,7 @@
 * [谈谈前端开发过程中bug率较高问题 ](https://github.com/JslinSir/my-blog/issues/5)
 
 ## Others
+* [font-family 探秘](https://juejin.cn/post/6844903912760147982)
 * [dom-to-image的使用](https://github.com/JslinSir/my-blog/issues/8)
 * [一个简单的react 路由实现 ](https://github.com/ashok-khanna/react-snippets/blob/main/Router.js)
 
