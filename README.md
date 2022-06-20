@@ -4,6 +4,7 @@
 * [Web Components 学习](https://github.com/JslinSir/my-blog/issues/11)
 
 ## JavaScript 
+* [原生js如何实现跨页面通信](https://github.com/JslinSir/my-blog/issues/16)
 * [window.addEventListener & window.dispatchEvent](https://github.com/JslinSir/my-blog/issues/12)
 * [JavaScript数据类型](https://github.com/JslinSir/my-blog/issues/13)
 * [base64 图片压缩](https://github.com/JslinSir/my-blog/issues/15)
