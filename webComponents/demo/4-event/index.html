@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件传递</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #f6f6f6;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./main.js" defer></script>
+
+    <my-event-component popdes="你好，这是一段描述~">
+        点我可以显示 弹窗
+    </my-event-component>
+</body>
+
+
+<script>
+  const eventEl = document.querySelector('my-event-component')
+  eventEl.addEventListener('statusChange',function(event){
+      console.log('监听 自定义组件 事件：statusChange:',event.detail.status)
+  })
+</script>
+
+</html>

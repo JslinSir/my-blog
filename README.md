@@ -1,7 +1,7 @@
 # JsLin Blog
 
 ## 学习
-* [Web Components 学习](https://github.com/JslinSir/my-blog/issues/11)
+* [Web Components 学习](./webComponents/README.md)
 
 ## JavaScript 
 * [原生js如何实现跨页面通信](https://github.com/JslinSir/my-blog/issues/16)

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <title>测试 adoptedCallback 回调</title>
+    <script  src="./main.js" defer></script>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+    .ifram-box{
+      margin-top: 120px;
+    }
+</style>
+ 
+<body>
+  <my-component data-name="测试 adoptedCallback 回调"></my-component>
+
+  <p>
+
+    <div class="ifram-box">
+        <button id="move">测试移动</button>
+    
+        <!-- 测试节点移动 -->
+        <iframe src="./iframe.html" frameborder="0"></iframe>
+      </div>
+    
+  </p>
+
+  
+ 
+
+
+ 
+
+
+
+<script>
+
+   
+  
+
+
+    // 移动 dom 
+    const moveBtn = document.getElementById('move')
+    moveBtn.onclick = function(){
+        const myComponent = document.querySelector('my-component')
+        const iframeEl =  document.querySelector('iframe')
+        const _container = iframeEl.contentWindow.document.body
+        _container.appendChild(myComponent)
+   }
+
+
+</script>
+</body>

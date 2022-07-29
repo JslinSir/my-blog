@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>模板和插槽的使用</title>
+    <script src="./main.js" defer></script>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f6f6f6;
+        padding: 20px;
+    }
+
+    .head-card {
+        margin-top: 20px;
+        width: 600px;
+    }
+
+    .scan {
+        width: 48px;
+        height: 48px;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAArhJREFUaEPtmTuIE1EUhv8zEML6Is3iKqlk3HBvwpq1tPGBYBN7YRsr10ejqGCnVhaKsI2PBQtBaxGtVFxQFBTRFDMnbIx24qvxsSgbklyZJQNDHvMwk+hdZsqZc/57v3vOua8haP6Q5v1HAvCvI5hEQKsImKaZTqfTBwBMK6WmAWwHsG5AiB8AXgJ4BcACcJeZl8Jqhk4hIcRWIroCYG9Y8b+0KxuGccyyrOdh/EMBFAqFUqvVuhdGMEabI8x8LUgvEEBKeRjAVa+QUuorABvAGyJyUmCQZy0RTSmltgHY6BUyDGO/ZVn3/cR9AQqFwo5Wq/WsQ2CWmecH6XE/XynlRQCnOgZrslKpvO3n0xdASukU51MARdeZmQMjFgeYlFJ5dB7V6/VSrVZb7qXtBzAD4JbH6RIzn46jg0EaUspDAK67dkR00Lbtm1EBLgA403b6zMwTQQ3H+V0I8YWIxh1NIpqzbft4VICH7pRJRA9s297nFbj9qfw4zg7PTBT3ePWEEAtEtKv97gkz74wK8B3AhrZTV/q0AXbHBLHQA+AyEZ1o6y8x8/qoAN5COs/M53pEYGgAUkqnvbNBE4hfEScAEdKrK4UGjoAQws3B1wCOMvOLUaZQPp+XSqk7ACYBzDPzbKQacIxzudxUs9lc7LWIDLuInfaz2exYJpPZbFnWu8grcVD4RwEQ1IeVNaKXkZTypFKq5CewKbelmF4zlgnTSJDN8q/f3z4uvi/72RHRDWb27gxWzLsATNMcT6VStrsKBjU+wu8/G42GqFarH7xtrj4Ah07rFAqbEv91EbsQWk+j2i9kHaeiZDMXUFvx74VWQwS0P9Bof6TU/lCv/bWK3hdbzrSn9dWiO29rfbnrQmh9ve5CaP2Dw4XQ+hdT2HPCqO1Gct8/TKgEYJijG0Y7iUCYURqmzR90NsZA34mDdgAAAABJRU5ErkJggg==);
+   
+    }
+</style>
+
+<body>
+
+    <!-- 在这里我们定义 一个模板 -->
+    <template id="my-template-head-card">
+        <style>
+            .head-card {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 10px;
+                background-color: #fff;
+                padding: 20px 15px;
+                width: 100%;
+                font-size: 14px;
+                color: #323232;
+            }
+
+            .left-head {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .left-head .avatar {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+
+            .left-head .left-info {
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+            }
+
+            .left-head .left-info .name {
+                font-size: 14px;
+                color: #323232;
+            }
+
+            .left-head .left-info .des {
+                font-size: 14px;
+                color: #999999;
+                margin-top: 12px;
+            }
+
+
+            .call-me {
+                padding: 10px;
+                border-radius: 10px;
+                background: red;
+                color: #fff;
+            }
+        </style>
+        <div class="head-card">
+            <div class="left-head">
+                <img class="avatar" src="https://semantic-ui.com/images/avatar2/large/kristy.png" />
+                <div class="left-info">
+                    <span class="name">
+                        JsLin
+                    </span>
+                    <span class="des">
+                        创业天虹
+                    </span>
+
+                </div>
+            </div>
+            <div class="right">
+                <slot name="right">
+                    <span class="call-me">联系我</span>
+                </slot>
+            </div>
+        </div>
+    </template>
+
+
+    <!-- 测试会不会影响内部样式 -->
+    <div class="head-card">
+        <my-head-card>
+
+        </my-head-card>
+    </div>
+
+
+    <div class="head-card">
+        <my-head-card name="张三" des="宝安天虹" avatar="https://joeschmoe.io/api/v1/random">
+
+        </my-head-card>
+    </div>
+
+
+    <div class="head-card">
+        <my-head-card name="李四" des="宝安天虹" avatar="https://joeschmoe.io/api/v1/random?xx=11">
+            <div slot="avatar">
+                <img src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+            </div>
+            <div slot="right">
+                <div class="scan"></div>
+            </div>
+        </my-head-card>
+    </div>
+
+
+
+
+
+
+    <script>
+
+
+    </script>
+</body>

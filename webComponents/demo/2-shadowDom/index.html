@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shadow Dom</title>
+</head>
+
+<body>
+
+  <hello-shadow-dom></hello-shadow-dom>
+
+  <button id="change"> 更改链接名称 </button>
+
+  <script>
+    class CustomElement extends HTMLElement {
+      constructor() {
+        super()
+        this.shadowRootDom = this.attachShadow({ mode: 'closed' })  // open  |  closed
+      }
+      connectedCallback() {
+        this.shadowRootDom.innerHTML = '<a href="#">My link</a>'
+      }
+    }
+    customElements.define('hello-shadow-dom', CustomElement)
+
+
+    const customEle = document.querySelector('hello-shadow-dom')
+    console.log('打印 是否 能访问到 shadowRoot', customEle.shadowRoot)
+
+    const changeBtn = document.getElementById('change')
+
+    changeBtn.addEventListener('click', function () {
+      if (customEle.shadowRoot) {
+        customEle.shadowRoot.innerHTML = '链接'
+      }
+
+
+    })
+
+
+  </script>
+</body>
+
+</html>

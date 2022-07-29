@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <title>生命周期测试</title>
+    <script  src="./main.js" defer></script>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .darg-mind{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 300px;
+      height: 300px;
+      background-color: antiquewhite;
+      border-radius: 10px;
+
+    }
+    .ifram-box{
+      margin-top: 120px;
+    }
+</style>
+ 
+<body>
+
+  <p>
+  <button id="add">添加自定义组件</button>
+  <button id="change">给第一个 修改 name</button>
+  <button id="delete">删除</button>
+  <button id="drag">给第一添加拖拽</button>
+  </p>
+
+  
+  <!-- 拖拽目标区域 -->
+  <div class="darg-mind" id="dragMainID"></div>
+
+
+
+
+
+<script>
+
+    // 新增操作
+    const addBtn = document.getElementById('add')
+    addBtn.onclick = function(){
+     // 新创建 一个组件实例
+     const myComponent = document.createElement('my-component')
+    myComponent.setAttribute('data-name',Math.floor(Math.random()*100))
+ 
+     document.body.appendChild(myComponent)
+
+   
+    }
+   
+    // 更改名称
+    const changeBtn = document.getElementById('change')
+    changeBtn.onclick = function(){
+     const myComponent = document.getElementsByTagName('my-component')
+     if(myComponent.length >0 ){
+      myComponent[0].setAttribute('data-name','你好')
+       return 
+     }
+  
+    }
+    
+
+  
+    // 删除操作
+    const deleteBtn = document.getElementById('delete')
+    deleteBtn.onclick = function(){
+     const myComponent = document.getElementsByTagName('my-component')
+     if(myComponent.length === 0){
+       return 
+     }
+     document.body.removeChild(myComponent[0])
+    }
+
+
+
+    // 拖拽 第一个元素
+    const dragBtn = document.getElementById('drag')
+    dragBtn.onclick = function(){
+      const myComponentAll = document.getElementsByTagName('my-component')
+      if(myComponentAll.length>0){
+        const dragEl = myComponentAll[0]
+        dragEl.setAttribute('draggable',true) //开启拖拽
+        dragEl.setAttribute('id',Math.random()) //设置拖拽Id
+        dragEl.addEventListener('dragstart',function(ev){
+        // 存放拖拽临时数据
+        ev.dataTransfer.setData("Text",ev.target.id)
+    })
+    }
+   }
+
+
+    // 拖拽监听
+     const dragMainEl = document.getElementById('dragMainID')
+     dragMainEl.addEventListener('drop',function(ev){
+      ev.preventDefault()
+	    const data=ev.dataTransfer.getData("Text")
+	    ev.target.appendChild(document.getElementById(data))
+     })
+
+     dragMainEl.addEventListener('dragover',function(ev){
+      ev.preventDefault()
+   
+     })
+
+</script>
+</body>
