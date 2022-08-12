@@ -1,6 +1,6 @@
 # JsLin Blog
 
-## 学习 web components
+## 学习 
 * [Web Components 学习](./webComponents/README.md)
 
 ## JavaScript 
