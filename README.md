@@ -3,13 +3,16 @@
 ## 学习 
 * [Web Components 学习](./webComponents/README.md)
 
-## JavaScript 
+## JavaScript 基础篇
+* [JavaScript基础之数据类型](https://github.com/JslinSir/my-blog/issues/13)
+
+## JavaScript 奇巧淫技
 * [原生js如何实现跨页面通信](https://github.com/JslinSir/my-blog/issues/16)
 * [window.addEventListener & window.dispatchEvent](https://github.com/JslinSir/my-blog/issues/12)
-* [JavaScript数据类型](https://github.com/JslinSir/my-blog/issues/13)
 * [base64 图片压缩](https://github.com/JslinSir/my-blog/issues/15)
 * [base64 转 流文件](https://github.com/JslinSir/my-blog/issues/25)
 * [优雅的处理 人民币单位](https://github.com/JslinSir/my-blog/issues/23)
+
 
 ## 小程序
 * [解锁在小程序中使用Svg新姿势🔥](https://github.com/JslinSir/my-blog/issues/7)
