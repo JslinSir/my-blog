@@ -2,6 +2,7 @@
 
 ## 学习 
 * [Web Components 学习](./webComponents/README.md)
+* [算法图解笔记](./算法图解/README.md)
 
 ## JavaScript 基础篇
 * [JavaScript基础之数据类型](https://github.com/JslinSir/my-blog/issues/13)
